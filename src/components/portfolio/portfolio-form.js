@@ -78,7 +78,7 @@ export default class PortfolioForm extends Component {
         position: position || "",
         url: url || "",
         editMode: true,
-        apiUrl: `https://oswaldogutierrez.devcamp.space/portfolio/portfolio_items/${id}`,
+        apiUrl: `https://oswaldogutierrrez.devcamp.space/portfolio/portfolio_items/${id}`,
         apiAction: "patch",
         thumb_image_url: thumb_image_url || "",
         banner_image_url: banner_image_url || "",
@@ -107,7 +107,7 @@ export default class PortfolioForm extends Component {
 
   componentConfig() {
     return {
-      iconFiletypes: [".jgp", ".png"],
+      iconFiletypes: [".jpg", ".png"],
       showFiletypeIcon: true,
       postUrl: "https://httpbin.org/post"
     };
@@ -210,6 +210,7 @@ export default class PortfolioForm extends Component {
             onChange={this.handleChange}
           />
         </div>
+
         <div className="two-column">
           <input
             type="text"
@@ -230,6 +231,7 @@ export default class PortfolioForm extends Component {
             <option value="Enterprise">Enterprise</option>
           </select>
         </div>
+
         <div className="one-column">
           <textarea
             type="text"
@@ -239,6 +241,7 @@ export default class PortfolioForm extends Component {
             onChange={this.handleChange}
           />
         </div>
+
         <div className="image-uploaders">
           {this.state.thumb_image_url && this.state.editMode ? (
             <div className="portfolio-manager-image-wrapper">

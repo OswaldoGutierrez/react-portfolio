@@ -1,14 +1,11 @@
-import React from 'react'
-import { Link } from "react-router-dom";
+import React from "react";
 
+import PortfolioContainer from "../portfolio/portfolio-container";
 
-const NoMatch = () => {
+export default function() {
   return (
-    <div className=''>
-      <h2>We couldn't find that page</h2>
-      <Link to="/">Return to homepage</Link>
+    <div>
+      <PortfolioContainer />
     </div>
-  )
+  );
 }
-
-export default NoMatch

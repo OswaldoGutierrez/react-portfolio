@@ -19,7 +19,7 @@ export default class BlogModal extends Component {
         width: "800px"
       },
       overlay: {
-        backgroundColor: "rbga(1, 1, 1, 0.75)"
+        backgroundColor: "rgba(1, 1, 1, 0.75)"
       }
     };
 
@@ -29,7 +29,7 @@ export default class BlogModal extends Component {
   }
 
   handleSuccessfullFormSubmission(blog) {
-    this.props.handleSuccessfullFormSubmission(blog);
+    this.props.handleSuccessfulNewBlogSubmission(blog);
   }
 
   render() {
